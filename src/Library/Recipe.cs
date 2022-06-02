@@ -9,7 +9,8 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe : RecipeContent
+    // Recipe ahora implementa la interfaz RecipeContent.
+    public class Recipe : IRecipeContent
     {
         // Cambiado por OCP
         private IList<BaseStep> steps = new List<BaseStep>();
